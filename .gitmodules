@@ -1,3 +1,6 @@
 [submodule "hw1-filesofpix"]
 	path = hw1-filesofpix
 	url = https://github.com/liam-strand/hw1-filesofpix
+[submodule "hw2-iii"]
+	path = hw2-iii
+	url = https://github.com/liam-strand/hw2-iii.git
