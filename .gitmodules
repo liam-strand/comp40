@@ -4,3 +4,21 @@
 [submodule "hw2-iii"]
 	path = hw2-iii
 	url = https://github.com/liam-strand/hw2-iii.git
+[submodule "hw3-locality"]
+	path = hw3-locality
+	url = https://github.com/liam-strand/hw3-locality
+[submodule "hw4-arith"]
+	path = hw4-arith
+	url = https://github.com/liam-strand/hw4-arith
+[submodule "hw5-bomb"]
+	path = hw5-bomb
+	url = https://github.com/liam-strand/hw5-bomb
+[submodule "hw6-um"]
+	path = hw6-um
+	url = https://github.com/liam-strand/hw6-um
+[submodule "hw7-profiling"]
+	path = hw7-profiling
+	url = https://github.com/liam-strand/hw7-profiling
+[submodule "hw8-asmcoding"]
+	path = hw8-asmcoding
+	url = https://github.com/liam-strand/hw8-asmcoding
