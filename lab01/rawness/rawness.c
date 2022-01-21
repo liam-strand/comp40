@@ -3,7 +3,8 @@
  * By Erin Lovell, Liam Strand
  * On January 21, 2022
  * 
- * Contains functions that 
+ * Contains functions that read a "plain" pnm and outputs the brightness of the image pixels.
+ * To do this we used built-in C libraries.
  * 
  * 
  * 
@@ -45,7 +46,7 @@ void readPicture(FILE *fp)
     Pnmrdr_mapdata data = Pnmrdr_data(pic);
 
     /* print pnm information (magic, width, height, denominator) */
-    printf("P5\n%d %d\n%d\n", data.width, data.height, data.denominator);
+    printf("P2\n%d %d\n%d\n", data.width, data.height, data.denominator);
 
     FILE *outfile = fopen("output.pgm", "w");
     if (fp == NULL) {
@@ -53,7 +54,7 @@ void readPicture(FILE *fp)
         exit(1);
     }
 
-    fprintf(outfile, "P5\n%d %d\n", data.width, data.height);
+    fprintf(outfile, "P5\n%d %d\n%d\n", data.width, data.height, 255);
     
     int tmp = 0;
 
@@ -62,17 +63,23 @@ void readPicture(FILE *fp)
         for (unsigned j = 0; j < data.width; j++) {
             /* store next read-in integer in tmp, then print integer to console */
             fscanf(fp, "%d", &tmp);
-            printf("%d ", tmp);
+            
+            float tmp_f = tmp;
+
+            /* make sure all pixel brightnesses are in the range of 0-255 */
+            int scaled_tmp = (int) ((tmp_f / data.denominator) * 255);
+            
+            printf("%d ", scaled_tmp);
 
             /* store the integer as a char and write it to the output file */
-            fprintf(outfile, "%c", tmp);
+            fprintf(outfile, "%c", scaled_tmp);
+
         }
 
         printf("\n");
     }
 
+    /* free memory allocated to outfile and pnm reader */
     fclose(outfile);
-
-    /* free memory allocated to pnm reader */
     Pnmrdr_free(&pic);
 }
