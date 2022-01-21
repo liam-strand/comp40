@@ -1,24 +1,24 @@
 [submodule "hw1-filesofpix"]
 	path = hw1-filesofpix
-	url = https://github.com/liam-strand/hw1-filesofpix
+	url = git@github.com:liam-strand/hw1-filesofpix.git
 [submodule "hw2-iii"]
 	path = hw2-iii
-	url = https://github.com/liam-strand/hw2-iii.git
+	url = git@github.com:liam-strand/hw2-iii.git
 [submodule "hw3-locality"]
 	path = hw3-locality
-	url = https://github.com/liam-strand/hw3-locality
+	url = git@github.com:liam-strand/hw3-locality.git
 [submodule "hw4-arith"]
 	path = hw4-arith
-	url = https://github.com/liam-strand/hw4-arith
+	url = git@github.com:liam-strand/hw4-arith.git
 [submodule "hw5-bomb"]
 	path = hw5-bomb
-	url = https://github.com/liam-strand/hw5-bomb
+	url = git@github.com:liam-strand/hw5-bomb.git
 [submodule "hw6-um"]
 	path = hw6-um
-	url = https://github.com/liam-strand/hw6-um
+	url = git@github.com:liam-strand/hw6-um.git
 [submodule "hw7-profiling"]
 	path = hw7-profiling
-	url = https://github.com/liam-strand/hw7-profiling
+	url = git@github.com:liam-strand/hw7-profiling.git
 [submodule "hw8-asmcoding"]
 	path = hw8-asmcoding
-	url = https://github.com/liam-strand/hw8-asmcoding
+	url = git@github.com:liam-strand/hw8-asmcoding.git
